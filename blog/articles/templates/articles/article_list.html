@@ -1,0 +1,41 @@
+{% extends 'base_layout.html' %}
+
+{% block content%}
+    <h1>Статьи</h1>
+    <div class="articles">
+    {% for article in page_object.object_list %}
+        <div class="article">
+            <img class="list_img" src="{{ article.thumb.url }}" />
+            <h2><a href="{% url 'articles:detail' slug=article.slug %}">{{ article.title }}</a></h2>
+            <p>{{ article.snippet }}</p>
+            <p>{{ article.date }}</p>
+            <p class="author">added by {{ article.author.username }}</p>
+        </div>
+    {% endfor %}
+    </div>
+    
+    <nav aria-label="...">
+    
+    <ul class="pagination">
+        
+    {% for n in page_object.paginator.page_range %}
+        
+        {% if page_object.number == n %}
+        <li class="page-item active" aria-current="page">
+            <a class="page-link" href="?page={{ n }}">{{ n }}<span class="sr-only"></span></a>
+        </li>
+        
+        {% else %}
+        <li class="page-item">
+            <a class="page-link" href="?page={{ n }}">{{ n }}</a>
+        </li>
+
+        {% endif %}
+    {% endfor %}
+
+    
+    </ul>
+    </nav>
+    </div>
+{% endblock %}
+

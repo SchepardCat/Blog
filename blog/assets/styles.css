@@ -1,0 +1,152 @@
+body{
+    background-color: #1e5945;
+    color: #fff;
+    
+}
+
+body *{
+    font-family: Ubuntu;
+}
+
+h1, h2, h3, h4, h5{
+    font-weight: normal;
+    margin: 0;
+}
+
+a, a:hover, a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+
+.wrapper{
+    max-width: 960px;
+    margin:0 auto;
+}
+
+div.wrapper h1{
+    text-align: center;
+    margin: 50px auto;
+    font-size: 3em;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 0;
+}
+
+nav{
+    justify-self: end;
+}
+
+nav li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+nav buttom{
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    font-size: 16px;
+}
+
+
+
+.articles{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.list_img {
+    width: 100%;
+    height: 100px;
+}
+
+.article{
+    padding: 10px;
+    border: 4px solid;
+    position: relative;
+    padding-bottom: 20px; 
+}
+
+.article h2{
+    font-size: 1.9em;
+}
+
+.article.author {
+    padding: 10px;
+    position: absolute;
+}
+
+.article-detail .article{
+    padding 0;
+}
+
+.article-detail .article img{
+    max-width: 100%;
+}
+
+.article-detail .article h2{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 3em;
+}
+
+.article-detail .article h3{
+    text-align: center;
+}
+
+.article-detail .article p{
+    margin: 10px 20px;
+}
+
+.site-form{
+    margin-top: 60px;
+    border: 4px solid;
+    padding: 20px;
+}
+
+.site-form input, .site-form textarea{
+    display: block;
+    margin: 20px 0 0px 0;
+    padding: 10px;
+}
+
+a.highlight{
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.helptext, .helptext ul{
+    margin: 0 auto 20px;
+    color: #bbb;
+    font-size: 14px;
+    dislpay: block;
+}
+
+.errorlist li{
+    padding: 10px;
+    list-style-type: none:
+    border: 2px solid #fff;
+    magrin: 10px 0;
+    color: #fff;
+}
+
+.errorlist {
+    padding: 0;
+}
+
+.site-form input[type="Подтвердить"]{
+    background: #fff;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
