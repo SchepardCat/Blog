@@ -13,18 +13,18 @@
         </div>
     {% endfor %}
     </div>
-    
+
     <nav aria-label="...">
-    
+
     <ul class="pagination">
-        
+
     {% for n in page_object.paginator.page_range %}
-        
+
         {% if page_object.number == n %}
         <li class="page-item active" aria-current="page">
             <a class="page-link" href="?page={{ n }}">{{ n }}<span class="sr-only"></span></a>
         </li>
-        
+
         {% else %}
         <li class="page-item">
             <a class="page-link" href="?page={{ n }}">{{ n }}</a>
@@ -33,9 +33,8 @@
         {% endif %}
     {% endfor %}
 
-    
+
     </ul>
     </nav>
     </div>
 {% endblock %}
-
